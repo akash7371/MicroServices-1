@@ -1,0 +1,12 @@
+server:
+  port: 2001
+  servlet:
+    context-path: /order
+  
+spring:
+  application:
+    name: order-service
+  config:
+    import: optional:configserver:http://localhost:9999/config
+        
+    
